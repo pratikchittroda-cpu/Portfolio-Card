@@ -1,12 +1,13 @@
 {
   "routes": [
-    { "src": "/portfolio/assets/(.*)", "dest": "/Portfolio/assets/$1" },
-    { "src": "/portfolio/styles.css",  "dest": "/Portfolio/styles.css"  },
-    { "src": "/portfolio/script.js",   "dest": "/Portfolio/script.js"   },
-    { "src": "/portfolio",             "dest": "/Portfolio/index.html"  },
-    { "src": "/public/(.*)",           "dest": "/Personal card/public/$1" },
-    { "src": "/styles.css",            "dest": "/Personal card/styles.css" },
-    { "src": "/app.js",                "dest": "/Personal card/app.js"  },
-    { "src": "/(.*)",                  "dest": "/Personal card/index.html" }
+    { "src": "^/portfolio$", "headers": { "Location": "/portfolio/" }, "status": 301 },
+    { "src": "^/portfolio/$",              "dest": "/Portfolio/index.html" },
+    { "src": "^/portfolio/assets/(.*)",    "dest": "/Portfolio/assets/$1" },
+    { "src": "^/portfolio/styles\\.css$",  "dest": "/Portfolio/styles.css" },
+    { "src": "^/portfolio/script\\.js$",   "dest": "/Portfolio/script.js" },
+    { "src": "^/public/(.*)",              "dest": "/Personal card/public/$1" },
+    { "src": "^/styles\\.css$",            "dest": "/Personal card/styles.css" },
+    { "src": "^/app\\.js$",               "dest": "/Personal card/app.js" },
+    { "src": "^/(.*)",                     "dest": "/Personal card/index.html" }
   ]
 }
