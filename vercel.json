@@ -1,6 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/portfolio/:path*", "destination": "/Portfolio/:path*" },
-    { "source": "/(.*)", "destination": "/Personal card/$1" }
+  "routes": [
+    { "src": "/portfolio/assets/(.*)", "dest": "/Portfolio/assets/$1" },
+    { "src": "/portfolio/styles.css",  "dest": "/Portfolio/styles.css"  },
+    { "src": "/portfolio/script.js",   "dest": "/Portfolio/script.js"   },
+    { "src": "/portfolio",             "dest": "/Portfolio/index.html"  },
+    { "src": "/public/(.*)",           "dest": "/Personal card/public/$1" },
+    { "src": "/styles.css",            "dest": "/Personal card/styles.css" },
+    { "src": "/app.js",                "dest": "/Personal card/app.js"  },
+    { "src": "/(.*)",                  "dest": "/Personal card/index.html" }
   ]
 }
