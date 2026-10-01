@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Pratik logo</title>
+  <desc id="desc">Three luminous lime orbit bands crossing around a central point.</desc>
+  <defs>
+    <linearGradient id="bandA" x1="10%" y1="0%" x2="88%" y2="100%">
+      <stop offset="0" stop-color="#eaffad" />
+      <stop offset="0.38" stop-color="#c9f36f" />
+      <stop offset="0.74" stop-color="#a3d456" />
+      <stop offset="1" stop-color="#719a4c" />
+    </linearGradient>
+    <linearGradient id="bandB" x1="90%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0" stop-color="#b9eb62" />
+      <stop offset="0.48" stop-color="#d9fa7f" />
+      <stop offset="0.83" stop-color="#9ac552" />
+      <stop offset="1" stop-color="#608643" />
+    </linearGradient>
+    <linearGradient id="orbit" x1="18%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0" stop-color="#f4ffc7" />
+      <stop offset="0.42" stop-color="#eaff9a" />
+      <stop offset="0.78" stop-color="#c8eb6b" />
+      <stop offset="1" stop-color="#93bb51" />
+    </linearGradient>
+    <radialGradient id="core" cx="35%" cy="25%" r="80%">
+      <stop offset="0" stop-color="#f4ffd0" stop-opacity=".98" />
+      <stop offset=".35" stop-color="#d9fa7b" stop-opacity=".94" />
+      <stop offset=".76" stop-color="#87b64d" stop-opacity=".62" />
+      <stop offset="1" stop-color="#446333" stop-opacity=".08" />
+    </radialGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="16" dy="22" stdDeviation="15" flood-color="#2e4722" flood-opacity=".28" />
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" />
+    </filter>
+  </defs>
+
+  <g opacity=".34" filter="url(#glow)">
+    <ellipse cx="256" cy="256" rx="132" ry="228" fill="none" stroke="#e4ff9a" stroke-width="86" transform="rotate(-39 256 256)" />
+    <ellipse cx="256" cy="256" rx="132" ry="228" fill="none" stroke="#cefa74" stroke-width="86" transform="rotate(39 256 256)" />
+  </g>
+
+  <g fill="none" stroke-linecap="round" filter="url(#shadow)">
+    <ellipse cx="256" cy="256" rx="132" ry="228" stroke="url(#bandA)" stroke-width="82" transform="rotate(-39 256 256)" />
+    <ellipse cx="256" cy="256" rx="132" ry="228" stroke="url(#bandB)" stroke-width="82" transform="rotate(39 256 256)" />
+  </g>
+
+  <ellipse cx="256" cy="265" rx="192" ry="56" fill="none" stroke="url(#orbit)" stroke-width="35" stroke-linecap="round" transform="rotate(-25 256 265)" filter="url(#shadow)" />
+  <ellipse cx="256" cy="258" rx="186" ry="51" fill="none" stroke="#f4ffc7" stroke-width="8" stroke-linecap="round" opacity=".42" transform="rotate(-25 256 258)" />
+
+  <circle cx="256" cy="256" r="41" fill="url(#core)" opacity=".4" />
+</svg>
