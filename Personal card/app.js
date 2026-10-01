@@ -7,7 +7,7 @@ const contact = {
   email: 'pratikchittroda@gmail.com',
   phone: '8980183557',
   location: 'Gujarat',
-  website: '',
+  website: '/portfolio',
   cardUrl: '',
   socials: {
     github: 'https://github.com/pratikchittroda-cpu',
@@ -94,6 +94,13 @@ const contact = {
       element.href = configured;
       element.target = '_blank';
       element.rel = 'noreferrer';
+      element.removeAttribute('aria-disabled');
+      return;
+    }
+
+    // Allow relative paths (e.g. '/portfolio') as valid internal links.
+    if (configured && (configured.startsWith('/') || configured.startsWith('./'))) {
+      element.href = configured;
       element.removeAttribute('aria-disabled');
       return;
     }
