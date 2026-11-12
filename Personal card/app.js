@@ -2,8 +2,8 @@
 const contact = {
   firstName: 'Pratik',
   lastName: '',
-  role: 'Independent developer',
-  bio: 'I build ambitious apps and websites where sharp design, thoughtful code, and AI meet.',
+  role: 'Mobile app developer',
+  bio: 'Hey, I am Pratik. I build AI-native mobile apps with React Native, Rust, Supabase and Firebase.',
   email: 'pratikchittroda@gmail.com',
   phone: '8980183557',
   location: 'Gujarat',
