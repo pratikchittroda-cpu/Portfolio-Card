@@ -30,7 +30,7 @@ const contact = {
   const toastText = $('#toastText');
   let toastTimer;
 
-  document.title = 'Pratik — Digital card';
+  document.title = 'Pratik Chittroda — Digital card & contact';
 
   function showToast(message) {
     if (!toast || !toastText) return;
