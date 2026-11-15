@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-card-ten-nu.vercel.app/sitemap.xml

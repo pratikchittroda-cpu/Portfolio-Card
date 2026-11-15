@@ -6,6 +6,8 @@
     { "src": "^/public/(.*)",              "dest": "/Personal card/public/$1" },
     { "src": "^/styles\\.css$",            "dest": "/Personal card/styles.css" },
     { "src": "^/app\\.js$",               "dest": "/Personal card/app.js" },
+    { "src": "^/sitemap\\.xml$",         "dest": "/Personal card/sitemap.xml" },
+    { "src": "^/robots\\.txt$",          "dest": "/Personal card/robots.txt" },
     { "src": "^/(.*)",                     "dest": "/Personal card/index.html" }
   ]
 }
